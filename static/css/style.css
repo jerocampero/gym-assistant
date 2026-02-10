@@ -1,0 +1,319 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.main-card {
+    min-height: 400px;
+}
+
+/* Botones */
+.btn {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-success {
+    background: #16a085;
+    color: white;
+    flex: 1;
+}
+
+.btn-success:hover {
+    background: #138d75;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+    flex: 1;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+/* Welcome section */
+#welcome-section {
+    text-align: center;
+}
+
+#welcome-section h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#welcome-section p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Info box */
+.info-box {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.info-box p {
+    margin: 5px 0;
+    color: #2c3e50;
+}
+
+/* Rutina section */
+.rutina-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+.rutina-header h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.rutina-header p {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.badge {
+    display: inline-block;
+    background: #16a085;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Ejercicios */
+.ejercicios-grupo {
+    margin-bottom: 30px;
+}
+
+.ejercicios-grupo h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+.ejercicios-grupo.destacado {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #f39c12;
+}
+
+.nota-core {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.ejercicio-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.ejercicio-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.ejercicio-nombre {
+    font-weight: 700;
+    color: #16a085;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.ejercicio-detalles {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.ejercicio-musculos {
+    color: #95a5a6;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Acciones */
+.acciones {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ecf0f1;
+}
+
+/* Loading */
+#loading {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Historial */
+.historial-card {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.historial-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.historial-item {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.historial-item:hover {
+    background: #e9ecef;
+}
+
+.historial-tipo {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.historial-fecha {
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+.text-muted {
+    color: #95a5a6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .acciones {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
